@@ -19,7 +19,7 @@
 %-------------------------------------------------------------------------------
 % A4 paper size by default, use 'letterpaper' for US letter
 \documentclass[11pt, a4paper]{awesome-cv}
-
+\usepackage{subfiles}
 % Configure page margins with geometry
 \geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
 
@@ -73,7 +73,8 @@
 %	BIBLIOGRAPHY
 %-------------------------------------------------------------------------------
 %\addbibresource{biblatex-examples.bib}
-\addbibresource{cv/references.bib}
+%\addbibresource{cv/references.bib}
+\addbibresource{patents.bib}
 %-------------------------------------------------------------------------------
 \begin{document}
 
@@ -85,7 +86,7 @@
 % Leave any of these blank if they are not needed
 \makecvfooter
   {\today}
-  {Claud D. Park~~~·~~~Curriculum Vitae}
+  {Binjian Xin~~~·~~~Curriculum Vitae}
   {\thepage}
 
 
@@ -93,18 +94,34 @@
 %	CV/RESUME CONTENT
 %	Each section is imported separately, open each file in turn to modify content
 %-------------------------------------------------------------------------------
-\input{cv/education.tex}
-\input{cv/skills.tex}
-\input{cv/experience.tex}
-\input{cv/extracurricular.tex}
-\input{cv/honors.tex}
-\input{cv/certificates.tex}
-\input{cv/presentation.tex}
-\input{cv/writing.tex}
+\subfile{cv/education.tex}
+\subfile{cv/skills.tex}
+\subfile{cv/experience.tex}
+\subfile{cv/extracurricular.tex}
+\subfile{cv/honors.tex}
+\subfile{cv/certificates.tex}
+\subfile{cv/presentation.tex}
+\subfile{cv/writing.tex}
 % For publications from bibtex, add to cv/references.bib and uncomment below
-\input{cv/publications.tex}
-\input{cv/committees.tex}
+%\subfile{cv/publications.tex}
 
+%-------------------------------------------------------------------------------
+% SECTION TITLE
+%-------------------------------------------------------------------------------
+\cvsection{Patents}
 
+\begin{refsection}
+
+    \nocite{Pan_Xin_2023}
+    \nocite{Xin_2022_07}
+    \printbibliography[
+    heading=none,
+    sorting=ydnt
+    ]
+\end{refsection}
+
+%
+\subfile{cv/committees.tex}
+%-------------------------------------------------------------------------------
 %-------------------------------------------------------------------------------
 \end{document}
