@@ -26,3 +26,6 @@
 ## Mac OS X metadata files:
 *.DS_Store
 
+/README.html
+/examples/.auctex-auto/
+/examples/cv/.auctex-auto/

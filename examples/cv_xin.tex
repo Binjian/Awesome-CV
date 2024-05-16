@@ -1,7 +1,6 @@
 %!TEX TS-program = xelatex
 %!TEX encoding = UTF-8 Unicode
 % Awesome CV LaTeX Template for CV/Resume
-
 %
 % This template has been downloaded from:
 % https://github.com/posquit0/Awesome-CV
@@ -20,7 +19,7 @@
 %-------------------------------------------------------------------------------
 % A4 paper size by default, use 'letterpaper' for US letter
 \documentclass[11pt, a4paper]{awesome-cv}
-\usepackage{subfiles}
+
 % Configure page margins with geometry
 \geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
 
@@ -52,48 +51,29 @@
 %-------------------------------------------------------------------------------
 % Available options: circle|rectangle,edge/noedge,left/right
 % \photo{./examples/profile.png}
-\name{Claud D.}{Park}
-\position{Site Reliability Engineer{\enskip\cdotp\enskip}Software Architect}
-\address{235, World Cup buk-ro, Mapo-gu, Seoul, 03936, Republic of Korea}
+\name{Binjian}{Xin}
 
-\mobile{(+82) 10-9030-1843}
-\email{posquit0.bj@gmail.com}
+\position{Deep Learning{\enskip\cdotp\enskip}Autonomous Driving{\enskip\cdotp\enskip}Software Design}
+\address{Rm. 102, Bd. 288, 99 Long Xiangju Road, Qingpu, Shanghai}
+
+\mobile{(+86) 139-1896-1550}
+\email{binjian.xin@hotmail.com}
 %\dateofbirth{January 1st, 1970}
-\homepage{www.posquit0.com}
-\github{posquit0}
-\linkedin{posquit0}
-% \gitlab{gitlab-id}
-% \stackoverflow{SO-id}{SO-name}
-% \twitter{@twit}
-% \skype{skype-id}
-% \reddit{reddit-id}
-% \medium{medium-id}
-% \kaggle{kaggle-id}
-% \hackerrank{hackerrank-id}
-% \googlescholar{googlescholar-id}{name-to-display}
+\homepage{binjian.github.io}
+\github{binjian}
+\gitlab{binjian}
+\linkedin{binjian-xin}
+\twitter{xinbinjian}
 %% \firstname and \lastname will be used
 % \googlescholar{googlescholar-id}{}
 % \extrainfo{extra information}
 
-\quote{``Be the change that you want to see in the world."}
-
-% subfigure bibtex configuration
-%\providecommand{\topdir}{.}
-%\addglobalbib{\topdir/local.bib} % topdir is needed here so that
-%                                      % we can resolve the path in the subfile
-%                                      % correctly. There we re-define the
-%                                      % topdir macro to the location of the
-%                                      % bib file.
-%\addglobalbib{\topdir/patents.bib}
-
-% -------------------------------------------------------------------------------
+\quote{``as free as a bird, as neat as a word."}
+%-------------------------------------------------------------------------------
 %	BIBLIOGRAPHY
 %-------------------------------------------------------------------------------
-%\addbibresource{biblio.bib}
-\addbibresource{patents.bib}
-\addbibresource{local.bib}
-
-
+%\addbibresource{biblatex-examples.bib}
+\addbibresource{cv/references.bib}
 %-------------------------------------------------------------------------------
 \begin{document}
 
@@ -113,75 +93,18 @@
 %	CV/RESUME CONTENT
 %	Each section is imported separately, open each file in turn to modify content
 %-------------------------------------------------------------------------------
-\subfile{cv/education.tex}
-\subfile{cv/skills.tex}
-\subfile{cv/experience.tex}
-\subfile{cv/extracurricular.tex}
-\subfile{cv/honors.tex}
-\subfile{cv/certificates.tex}
-\subfile{cv/presentation.tex}
-\subfile{cv/writing.tex}
+\input{cv/education.tex}
+\input{cv/skills.tex}
+\input{cv/experience.tex}
+\input{cv/extracurricular.tex}
+\input{cv/honors.tex}
+\input{cv/certificates.tex}
+\input{cv/presentation.tex}
+\input{cv/writing.tex}
 % For publications from bibtex, add to cv/references.bib and uncomment below
+\input{cv/publications.tex}
+\input{cv/committees.tex}
 
 
-%\subfile{cv/publications.tex}
-
-%-------------------------------------------------------------------------------
-% SECTION TITLE
-%-------------------------------------------------------------------------------
-\cvsection{Publications}
-
-%-------------------------------------------------------------------------------
-% SUBSECTION TITLE
-%-------------------------------------------------------------------------------
-\cvsubsection{Journal Articles}
-
-\begin{refsection}
-%    \nocite{gillies}
-%    \nocite{glashow}
-%    \nocite{herrmann}
-
-\nocite{orta22:_novel_lamb}
-    \nocite{brockman16:_openai_gym}
-    \nocite{chen17:_ucb_explor_q_ensem}
-    \printbibliography[
-    heading=none,
-    sorting=ydnt
-    ]
-\end{refsection}
-
-%-------------------------------------------------------------------------------
-% SUBSECTION TITLE
-%-------------------------------------------------------------------------------
-\cvsubsection{Conference Proceedings}
-
-\begin{refsection}
-    %\nocite{kour2014fast}
-
-    \nocite{chen17:_ucb_explor_q_ensem}
-
-    \printbibliography[
-    heading=none,
-    sorting=ydnt
-    ]
-\end{refsection}
-
-%-------------------------------------------------------------------------------
-% SUBSECTION TITLE
-%-------------------------------------------------------------------------------
-\cvsubsection{Patents}
-
-\begin{refsection}
-
-    \nocite{Pan_Xin_2023}
-    \nocite{Xin_2022_07}
-    \printbibliography[
-    heading=none,
-    sorting=ydnt
-    ]
-\end{refsection}
-
-%
-\subfile{cv/committees.tex}
 %-------------------------------------------------------------------------------
 \end{document}

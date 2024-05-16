@@ -1,3 +1,7 @@
+%\providecommand{\topdir}{..} % reset all paths to location of cv.tex
+\documentclass[../cv.tex]{subfiles}
+
+\begin{document}
 %-------------------------------------------------------------------------------
 % SECTION TITLE
 %-------------------------------------------------------------------------------
@@ -9,12 +13,21 @@
 \cvsubsection{Journal Articles}
 
 \begin{refsection}
-    \nocite{gillies}
-    \nocite{glashow}
-    \nocite{herrmann}
+%    \nocite{gillies}
+%    \nocite{glashow}
+%    \nocite{herrman}
+%
+    %\ifSubfilesClassLoaded{%
+    %    \printbibliography[
+    %        heading=none,
+    %        sorting=ydnt
+    %    ]
+    %  }{} % we have no 'else' action
+
+
 
     \printbibliography[
-    heading=none, 
+    heading=none,
     sorting=ydnt
     ]
 \end{refsection}
@@ -25,11 +38,28 @@
 \cvsubsection{Conference Proceedings}
 
 \begin{refsection}
-    \nocite{salam}
-    \nocite{moraux}
-    
+    %\nocite{kour2014fast}
+    %\nocite{brockman16:_openai_gym}
+
+
     \printbibliography[
-    heading=none, 
+    heading=none,
     sorting=ydnt
     ]
 \end{refsection}
+
+%-------------------------------------------------------------------------------
+% SUBSECTION TITLE
+%-------------------------------------------------------------------------------
+\cvsubsection{Patents}
+
+\begin{refsection}
+    %\nocite{fu22:_cooper_graph_approac_multiag_spars}
+  %\cite{Pan_Xin_2023}
+
+    \printbibliography[
+    heading=none,
+    sorting=ydnt
+    ]
+\end{refsection}
+\end{document}
