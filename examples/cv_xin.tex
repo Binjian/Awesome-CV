@@ -74,7 +74,8 @@
 %-------------------------------------------------------------------------------
 %\addbibresource{biblatex-examples.bib}
 %\addbibresource{cv/references.bib}
-\addbibresource{patents.bib}
+%\addbibresource{patents.bib}
+\bibliography{local.bib, patents_misc.bib}
 %-------------------------------------------------------------------------------
 \begin{document}
 
@@ -95,13 +96,13 @@
 %	Each section is imported separately, open each file in turn to modify content
 %-------------------------------------------------------------------------------
 \subfile{cv/education.tex}
-\subfile{cv/skills.tex}
 \subfile{cv/experience.tex}
-\subfile{cv/extracurricular.tex}
-\subfile{cv/honors.tex}
-\subfile{cv/certificates.tex}
-\subfile{cv/presentation.tex}
-\subfile{cv/writing.tex}
+\subfile{cv/skills.tex}
+%\subfile{cv/extracurricular.tex}
+%\subfile{cv/honors.tex}
+%\subfile{cv/certificates.tex}
+%\subfile{cv/presentation.tex}
+%\subfile{cv/writing.tex}
 % For publications from bibtex, add to cv/references.bib and uncomment below
 %\subfile{cv/publications.tex}
 
@@ -111,9 +112,17 @@
 \cvsection{Patents}
 
 \begin{refsection}
+\nocite{Xin_VEOS_22}
+\nocite{Xin_GenAI_23}
+\nocite{Xin_LLM_24}
+\nocite{Xin_VLM_24}
+\nocite{Xin_Latent_Diffusion_23}
+\nocite{Xin_Fu_Pan_Simulation_Test_RL_22}
+\nocite{Xin_Chen_NN_TSFeatures_23}
+\nocite{Pan_Xin_DrvStyle_23}
+\nocite{Xin_RearView_17}
 
-    \nocite{Pan_Xin_2023}
-    \nocite{Xin_2022_07}
+
     \printbibliography[
     heading=none,
     sorting=ydnt
@@ -121,7 +130,7 @@
 \end{refsection}
 
 %
-\subfile{cv/committees.tex}
+%\subfile{cv/committees.tex}
 %-------------------------------------------------------------------------------
 %-------------------------------------------------------------------------------
 \end{document}
