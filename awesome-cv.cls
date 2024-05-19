@@ -807,9 +807,9 @@
 %-------------------------------------------------------------------------------
 %\RequirePackage[style=verbose, maxnames=99, sorting=ydnt]{biblatex}
 \RequirePackage[ % BibLaTeX
-	sorting=ydnt, % Sorts entries by year (descending order), name, title
-	style=verbose,
-	doi=false,
+	sorting=ydnt, %ydnt, % Sorts entries by year (descending order), name, title
+	style=verbose, %alphabetic, %verbose, %numberic
+	doi=true,
 	isbn=true,
 	url=false,
 	eprint=false,

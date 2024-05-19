@@ -1,5 +1,8 @@
-\documentclass[../cv.tex]{subfiles}
+\documentclass[../cv_xin.tex]{subfiles}
 
+%\bibliography{../local.bib,../patents_misc.bib}
+%\addbibresource{../local.bib}
+%\addbibresource{../patents_misc.bib}
 \begin{document}
 %-------------------------------------------------------------------------------
 %	SECTION TITLE
@@ -14,19 +17,22 @@
 
 %---------------------------------------------------------
   \cventry
-    {Founding Member \& Site Reliability Engineer \& Infrastructure Team Lead} % Job title
-    {Danggeun Pay Inc. (KarrotPay)} % Organization
-    {Seoul, S.Korea} % Location
-    {Mar. 2021 - Present} % Date(s)
+    {Senior Technical Director} % Job title
+    {Newrizon Inc.} % Organization
+    {Shanghai, China} % Location
+    {Nov. 2020 - May 2024} % Date(s)
     {
       \begin{cvitems} % Description(s) of tasks/responsibilities
-        \item {Everything that matters.}
-        \item {Designed and provisioned the entire infrastructure on the AWS cloud to meet security compliance and acquire a business license for financial services in Korea.}
-        \item {Continuously improved the infrastructure architecture since launching the service. (currently 3.6 million users)}
-        \item {Established a standardized base for declarative management of infrastructures and service deployments, enabling operational efficiency and consistency. Over 90\% of AWS resources were all managed through standardized terraform modules. All add-ons and service workloads on the Kubernetes cluster were managed on a GitOps basis with Kustomize and ArgoCD.}
-        \item {Saved over 30\% of the overall AWS costs by establishing a quarterly purchasing strategiy for RI (Reserved Instance) and SP (Savings Plan) and by introducing Graviton instances.}
-        \item {Established a core architecture for regulating of outbound DNS traffic in multi-account and multi-VPC environments utilizing AWS Route53 DNS Firewall and FMS. This significantly increased the level of security confidence in the financial sector's segregated environment.}
-        \item {Introduced Okta employee identity solution in the company, establishing security policies and configuring SSO integration with over 20 enterprise systems including AWS, GitHub, Slack, Google Workspace. Set up a Hub and Spoke architecture, enabling a collaborative account structure with the parent company, Daangn Market.}
+          \item RL based electric powertrain control optimization in multi-modal complex environments.
+          \hyperlink{Xin_VEOS_22}{$\rightarrow$\circled{P}} \hyperlink{Xin_Fu_Pan_Simulation_Test_RL_22}{$\rightarrow$\circled{P}} \hyperlink{Pan_Xin_DrvStyle_23}{$\rightarrow$\circled{P}}
+          \item Time series anomaly detection and battery state of safety prediction based on generative models. \hyperlink{Xin_GenAI_23}{$\rightarrow$\circled{P}} \hyperlink{Xin_Chen_NN_TSFeatures_23}{$\rightarrow$\circled{P}}
+          \item Software design \& development of streaming data pipeline for time sequence analysis.
+            \begin{itemize}
+                    \item Data Flow (ETL, ML training/inference pipelines) \href{https://binjian.github.io/tspace/}{$\rightarrow$ \textbf{tspace} }
+                    \item CAN Application Python bundle \href{https://binjian.github.io/candycan/}{$\rightarrow$ \textbf{candycan}}
+                    \item Time series analysis with generative AI \href{https://github.io/binjian/funes-ts/}{$\rightarrow$ \textbf{funes-ts}}
+                    %\item \href{https://binjian.gitlab.io/tspace/}{tspace}
+            \end{itemize}
       \end{cvitems}
     }
 

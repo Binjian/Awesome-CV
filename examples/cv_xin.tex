@@ -20,8 +20,13 @@
 % A4 paper size by default, use 'letterpaper' for US letter
 \documentclass[11pt, a4paper]{awesome-cv}
 \usepackage{subfiles}
+\usepackage{emo}
+\usepackage{tikz}
 % Configure page margins with geometry
 \geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
+
+\newcommand*\circled[1]{\tikz[baseline=(char.base)]{
+            \node[shape=circle,draw,thick,inner sep=1pt] (char) {#1};}}
 
 % Color for highlights
 % Awesome Colors: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange
@@ -111,10 +116,12 @@
 %-------------------------------------------------------------------------------
 \cvsection{Publications}
 
+%\printbibliography
+
 %-------------------------------------------------------------------------------
 % SUBSECTION TITLE
 %-------------------------------------------------------------------------------
-\cvsubsection{Journal Articles}
+\cvsubsection{\circled{J}ournal Articles}
 
 \begin{refsection}
 %    \nocite{gillies}
@@ -128,9 +135,9 @@
     %    ]
     %  }{} % we have no 'else' action
 
- \nocite{xin2008auswertung}
  \nocite{xin2009multiscale}
  \nocite{xin2004bildfolgenauswertung}
+ \nocite{xin2002AntColony}
 
     \printbibliography[
     heading=none,
@@ -141,12 +148,12 @@
 %-------------------------------------------------------------------------------
 % SUBSECTION TITLE
 %-------------------------------------------------------------------------------
-\cvsubsection{Conference Proceedings}
+\cvsubsection{\circled{C}onference Proceedings}
 
 \begin{refsection}
 
 \nocite{xin2007evaluation}
-\nocite{KneeSimulator2002}
+\nocite{xin2002KneeSimulator}
     \printbibliography[
     heading=none,
     sorting=ydnt
@@ -156,11 +163,11 @@
 %-------------------------------------------------------------------------------
 % SUBSECTION TITLE
 %-------------------------------------------------------------------------------
-\cvsubsection{Book}
+\cvsubsection{\circled{B}ook}
 
 \begin{refsection}
 
-\nocite{xin2008auswertung}
+\nocite{xin2008diss}
 
     \printbibliography[
     heading=none,
@@ -170,7 +177,7 @@
 %-------------------------------------------------------------------------------
 % SUBSECTION TITLE
 %-------------------------------------------------------------------------------
-\cvsubsection{Patents}
+\cvsubsection{\circled{P}atents}
 
 \begin{refsection}
 \nocite{Xin_VEOS_22}
