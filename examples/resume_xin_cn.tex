@@ -18,23 +18,28 @@
 % CONFIGURATIONS
 %-------------------------------------------------------------------------------
 % A4 paper size by default, use 'letterpaper' for US letter
-\documentclass[11pt, a4paper]{awesome-cv}
+\documentclass[11pt, a4paper]{awesome-cv-cn}
+
+\usepackage{xeCJK}
+\newfontfamily\hei{Adobe Heiti Std}
+\newfontfamily\kai{Adobe Kaiti Std}
+\setCJKmainfont[BoldFont=LXGWWenKai-Bold,ItalicFont=LXGWWenKai-Light]{LXGW WenKai}   % 设置默认中文字体
+\setCJKmonofont{LXGWWenKaiMono}   % 设置等宽字体
+\fontdir[fonts/]
+
 \usepackage[style=numeric,defernumbers=true,maxbibnames=99,sorting=ydnt]{biblatex}
 \usepackage{subfiles}
 \usepackage{twemojis}
-%\usepackage{tikz}
 % Configure page margins with geometry
 \geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
 
-%\newcommand*\circled[1]{\tikz[baseline=(char.base)]{
-%            \node[shape=circle,draw,thick,inner sep=1pt] (char) {#1};}}
 
 % Color for highlights
 % Awesome Colors: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange
 %                 awesome-nephritis, awesome-concrete, awesome-darknight
 \colorlet{awesome}{awesome-red}
 % Uncomment if you would like to specify your own color
-% \definecolor{awesome}{HTML}{CA63A8}
+% \definecolor{awesome}{HTML}{3E6D9C}
 
 % Colors for text
 % Uncomment if you would like to specify your own color
@@ -56,10 +61,10 @@
 %	Comment any of the lines below if they are not required
 %-------------------------------------------------------------------------------
 % Available options: circle|rectangle,edge/noedge,left/right
-\photo{avatar1.jpg}
-\name{Binjian}{Xin}
-\position{Deep Learning{\enskip\cdotp\enskip}Autonomous Driving{\enskip\cdotp\enskip}Software Design}
-\address{Rm. 102, Bd. 288, 99 Long Xiangju Road, Qingpu, Shanghai}
+\photo[rectangle,edge,right]{avatar1.jpg}
+\name{忻}{斌健}
+\position{深度学习{\enskip\cdotp\enskip}自动驾驶{\enskip\cdotp\enskip}软件设计}
+\address{上海市青浦区巷居路99弄288号102室}
 
 \mobile{(+86) 139-1896-1550}
 \email{binjian.xin@hotmail.com}
@@ -68,30 +73,34 @@
 \github{binjian}
 \linkedin{binjian-xin}
 \twitter{xinbinjian}
+% \gitlab{gitlab-id}
+% \stackoverflow{SO-id}{SO-name}
+% \twitter{@twit}
+% \skype{skype-id}
+% \reddit{reddit-id}
+% \medium{madium-id}
+% \kaggle{kaggle-id}
+% \hackerrank{hackerrank-id}
+% \googlescholar{googlescholar-id}{name-to-display}
 %% \firstname and \lastname will be used
 % \googlescholar{googlescholar-id}{}
 % \extrainfo{extra information}
 
-\quote{``$Decoding \neq Interpretation$, $Abstraction = Understanding$"}
-%-------------------------------------------------------------------------------
-%	BIBLIOGRAPHY
-%-------------------------------------------------------------------------------
-%\addbibresource{biblatex-examples.bib}
-%\addbibresource{cv/references.bib}
-%\addbibresource{patents.bib}
-\bibliography{local.bib,patents_misc.bib}
+\quote{``解码非解释, 抽象即理解"}
+
+\bibliography{local_cn.bib,patents_misc_cn.bib}
 %-------------------------------------------------------------------------------
 \begin{document}
 
 % Print the header with above personal information
 % Give optional argument to change alignment(C: center, L: left, R: right)
-\makecvheader
+\makecvheader[C]
 
 % Print the footer with 3 arguments(<left>, <center>, <right>)
 % Leave any of these blank if they are not needed
 \makecvfooter
   {\today}
-  {Binjian Xin~~~·~~~Curriculum Vitae}
+  {忻斌健~~~·~~~简历}
   {\thepage}
 
 
@@ -99,30 +108,27 @@
 %	CV/RESUME CONTENT
 %	Each section is imported separately, open each file in turn to modify content
 %-------------------------------------------------------------------------------
-\subfile{cv/education_xin.tex}
-\subfile{cv/experience_xin.tex}
-\subfile{cv/skills_xin.tex}
-%\subfile{cv/extracurricular.tex}
-%\subfile{cv/honors.tex}
-%\subfile{cv/certificates.tex}
-%\subfile{cv/presentation.tex}
-%\subfile{cv/writing.tex}
-% For publications from bibtex, add to cv/references.bib and uncomment below
-%\subfile{cv/publications.tex}
+\subfile{resume/summary_xin_cn.tex}
+\subfile{resume/experience_xin_cn.tex}
+% \input{resume/honors.tex}
+% \input{resume/certificates.tex}
+% \input{resume/presentation.tex}
+% \input{resume/writing.tex}
+% \input{resume/committees.tex}
+\subfile{resume/education_xin_cn.tex}
+% \input{resume/extracurricular.tex}
+\subfile{resume/skills_xin_cn.tex}
 
 %-------------------------------------------------------------------------------
 % SECTION TITLE
 %-------------------------------------------------------------------------------
-\cvsection{Publications}
+\cvsection{出版物}
 
 %\printbibliography
 
 %-------------------------------------------------------------------------------
 % SUBSECTION TITLE
 %-------------------------------------------------------------------------------
-\cvsubsection{Journal Articles}
-
-\begin{refsegment}
 %    \nocite{gillies}
 %    \nocite{glashow}
 %    \nocite{herrman}
@@ -134,75 +140,23 @@
     %    ]
     %  }{} % we have no 'else' action
 
- \nocite{xin2009multiscale}
- \nocite{xin2004bildfolgenauswertung}
- \nocite{xin2002AntColony}
-
-    \printbibliography[
-    segment=\therefsegment,
-    heading=none,
-    sorting=ydnt
-    ]
-\end{refsegment}
-
-%-------------------------------------------------------------------------------
-% SUBSECTION TITLE
-%-------------------------------------------------------------------------------
-\cvsubsection{Conference Proceedings}
-
-\begin{refsegment}
-
+\nocite{xin2009multiscale}
 \nocite{xin2007evaluation}
 \nocite{xin2002KneeSimulator}
-    \printbibliography[
-    segment=\therefsegment,
-    heading=none,
-    sorting=ydnt
-    ]
-\end{refsegment}
 
-%-------------------------------------------------------------------------------
-% SUBSECTION TITLE
-%-------------------------------------------------------------------------------
-\cvsubsection{Book}
-
-\begin{refsegment}
 
 \nocite{xin2008diss}
 
-    \printbibliography[
-    segment=\therefsegment,
-    heading=none,
-    sorting=ydnt
-    ]
-\end{refsegment}
-%-------------------------------------------------------------------------------
-% SUBSECTION TITLE
-%-------------------------------------------------------------------------------
-\cvsubsection{Patents}
-
-\begin{refsegment}
 \nocite{Xin_VEOS_22}
 \nocite{Xin_GenAI_23}
-\nocite{Xin_LLM_24}
 \nocite{Xin_VLM_24}
 \nocite{Xin_Latent_Diffusion_23}
-\nocite{Xin_Fu_Pan_Simulation_Test_RL_22}
-\nocite{Xin_Chen_NN_TSFeatures_23}
-\nocite{Pan_Xin_DrvStyle_23}
-\nocite{Xin_RearView_17}
-\nocite{Xin_Fu_Pan_Simulation_Test_RL_22}
 \nocite{Xin_Daimler_08}
 
-    \printbibliography[
-    segment=\therefsegment,
-    heading=none,
-    sorting=ydnt
-    ]
-\end{refsegment}
+\printbibliography[
+heading=none,
+sorting=ydnt
+]
 
-%
-%\subfile{cv/committees_xin.tex}
-%-------------------------------------------------------------------------------
 %-------------------------------------------------------------------------------
 \end{document}
