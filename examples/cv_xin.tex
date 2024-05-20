@@ -19,14 +19,15 @@
 %-------------------------------------------------------------------------------
 % A4 paper size by default, use 'letterpaper' for US letter
 \documentclass[11pt, a4paper]{awesome-cv}
+\usepackage[style=numeric,defernumbers=true,maxbibnames=99,sorting=ydnt]{biblatex}
 \usepackage{subfiles}
-\usepackage{emo}
-\usepackage{tikz}
+\usepackage{twemojis}
+%\usepackage{tikz}
 % Configure page margins with geometry
 \geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
 
-\newcommand*\circled[1]{\tikz[baseline=(char.base)]{
-            \node[shape=circle,draw,thick,inner sep=1pt] (char) {#1};}}
+%\newcommand*\circled[1]{\tikz[baseline=(char.base)]{
+%            \node[shape=circle,draw,thick,inner sep=1pt] (char) {#1};}}
 
 % Color for highlights
 % Awesome Colors: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange
@@ -55,7 +56,7 @@
 %	Comment any of the lines below if they are not required
 %-------------------------------------------------------------------------------
 % Available options: circle|rectangle,edge/noedge,left/right
-\photo{avatar.jpg}
+\photo{avatar1.jpg}
 \name{Binjian}{Xin}
 \position{Deep Learning{\enskip\cdotp\enskip}Autonomous Driving{\enskip\cdotp\enskip}Software Design}
 \address{Rm. 102, Bd. 288, 99 Long Xiangju Road, Qingpu, Shanghai}
@@ -78,7 +79,7 @@
 %\addbibresource{biblatex-examples.bib}
 %\addbibresource{cv/references.bib}
 %\addbibresource{patents.bib}
-\bibliography{local.bib, patents_misc.bib}
+\bibliography{local.bib,patents_misc.bib}
 %-------------------------------------------------------------------------------
 \begin{document}
 
@@ -119,9 +120,9 @@
 %-------------------------------------------------------------------------------
 % SUBSECTION TITLE
 %-------------------------------------------------------------------------------
-\cvsubsection{\circled{J}ournal Articles}
+\cvsubsection{Journal Articles}
 
-\begin{refsection}
+\begin{refsegment}
 %    \nocite{gillies}
 %    \nocite{glashow}
 %    \nocite{herrman}
@@ -138,46 +139,49 @@
  \nocite{xin2002AntColony}
 
     \printbibliography[
+    segment=\therefsegment,
     heading=none,
     sorting=ydnt
     ]
-\end{refsection}
+\end{refsegment}
 
 %-------------------------------------------------------------------------------
 % SUBSECTION TITLE
 %-------------------------------------------------------------------------------
-\cvsubsection{\circled{C}onference Proceedings}
+\cvsubsection{Conference Proceedings}
 
-\begin{refsection}
+\begin{refsegment}
 
 \nocite{xin2007evaluation}
 \nocite{xin2002KneeSimulator}
     \printbibliography[
+    segment=\therefsegment,
     heading=none,
     sorting=ydnt
     ]
-\end{refsection}
+\end{refsegment}
 
 %-------------------------------------------------------------------------------
 % SUBSECTION TITLE
 %-------------------------------------------------------------------------------
-\cvsubsection{\circled{B}ook}
+\cvsubsection{Book}
 
-\begin{refsection}
+\begin{refsegment}
 
 \nocite{xin2008diss}
 
     \printbibliography[
+    segment=\therefsegment,
     heading=none,
     sorting=ydnt
     ]
-\end{refsection}
+\end{refsegment}
 %-------------------------------------------------------------------------------
 % SUBSECTION TITLE
 %-------------------------------------------------------------------------------
-\cvsubsection{\circled{P}atents}
+\cvsubsection{Patents}
 
-\begin{refsection}
+\begin{refsegment}
 \nocite{Xin_VEOS_22}
 \nocite{Xin_GenAI_23}
 \nocite{Xin_LLM_24}
@@ -191,10 +195,11 @@
 \nocite{Xin_Daimler_08}
 
     \printbibliography[
+    segment=\therefsegment,
     heading=none,
     sorting=ydnt
     ]
-\end{refsection}
+\end{refsegment}
 
 %
 %\subfile{cv/committees_xin.tex}
