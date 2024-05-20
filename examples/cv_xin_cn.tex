@@ -1,0 +1,227 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+% Awesome CV LaTeX Template for CV/Resume
+%
+% This template has been downloaded from:
+% https://github.com/posquit0/Awesome-CV
+%
+% Author:
+% Claud D. Park <posquit0.bj@gmail.com>
+% http://www.posquit0.com
+%
+% Template license:
+% CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
+%
+
+
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+% 很棒的简历 LaTeX 模板
+%
+% 该模板来自:
+% https://github.com/posquit0/Awesome-CV
+%
+% 作者:
+% Claud D. Park <posquit0.bj@gmail.com>
+% http://www.posquit0.com
+%
+% 模板许可证:
+% CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
+%
+
+%-------------------------------------------------------------------------------
+% 配置
+%-------------------------------------------------------------------------------
+% 默认情况下为 A4 纸张大小，使用 'letterpaper' 选项可切换为 US letter
+\documentclass[11pt, a4paper]{awesome-cncv}
+
+\usepackage{xeCJK}
+\newfontfamily\hei{Adobe Heiti Std}
+\newfontfamily\kai{Adobe Kaiti Std}
+\setCJKmainfont[BoldFont=LXGWWenKai-Bold,ItalicFont=LXGWWenKai-Light]{LXGW WenKai}   % 设置默认中文字体
+\setCJKmonofont{LXGWWenKaiMono}   % 设置等宽字体
+\fontdir[fonts/]
+
+\usepackage{subfiles}
+\usepackage{emo}
+\usepackage{tikz}
+% 使用 geometry 配置页面边距
+\geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
+
+\newcommand*\circled[1]{\tikz[baseline=(char.base)]{
+            \node[shape=circle,draw,thick,inner sep=1pt] (char) {#1};}}
+
+% 高亮颜色
+% 可选颜色: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange
+%           awesome-nephritis, awesome-concrete, awesome-darknight
+\colorlet{awesome}{awesome-red}
+% 如果想指定自己的颜色，取消注释下面一行
+% \definecolor{awesome}{HTML}{CA63A8}
+
+% 文本颜色
+% 如果想指定自己的颜色，取消注释下面几行
+% \definecolor{darktext}{HTML}{414141}
+% \definecolor{text}{HTML}{333333}
+% \definecolor{graytext}{HTML}{5D5D5D}
+% \definecolor{lighttext}{HTML}{999999}
+% \definecolor{sectiondivider}{HTML}{5D5D5D}
+
+% 设置为 false 如果不想用 awesome 颜色高亮段落
+\setbool{acvSectionColorHighlight}{true}
+
+% 如果想更改社交信息分隔符，从 '|' 更改为其他内容
+\renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
+
+
+%-------------------------------------------------------------------------------
+% 个人信息
+% 注释掉下面的任何行如果不需要
+%-------------------------------------------------------------------------------
+% 可用选项: circle|rectangle,edge/noedge,left/right
+\photo{avatar.jpg}
+\name{斌健}{忻}
+\position{深度学习{\enskip\cdotp\enskip}自动驾驶{\enskip\cdotp\enskip}软件设计}
+\address{上海市青浦区巷居路99弄288号102室}
+
+\mobile{(+86) 139-1896-1550}
+\email{binjian.xin@hotmail.com}
+%\dateofbirth{January 1st, 1970}
+\homepage{binjian.github.io}
+\github{binjian}
+\linkedin{binjian-xin}
+\twitter{xinbinjian}
+%% \firstname 和 \lastname 将会被使用
+% \googlescholar{googlescholar-id}{}
+% \extrainfo{extra information}
+
+\quote{``解码非解释, 抽象即理解。"}
+%-------------------------------------------------------------------------------
+% 参考文献
+%-------------------------------------------------------------------------------
+%\addbibresource{biblatex-examples.bib}
+%\addbibresource{cv/references.bib}
+%\addbibresource{patents.bib}
+\bibliography{local_cn.bib, patents_misc_cn.bib}
+%-------------------------------------------------------------------------------
+\begin{document}
+
+% 打印包含个人信息的页眉
+% 可选参数可以改变对齐方式(C: center, L: left, R: right)
+\makecvheader
+
+% 打印包含日期、姓名的页脚
+% 留空如果不需要
+\makecvfooter
+  {\today}
+  {忻斌健~~~·~~~简历}
+  {\thepage}
+
+
+%-------------------------------------------------------------------------------
+% 简历内容
+% 每个部分分别导入，依次打开每个文件以修改内容
+%-------------------------------------------------------------------------------
+\subfile{cv/education_xin_cn.tex}
+\subfile{cv/experience_xin_cn.tex}
+\subfile{cv/skills_xin_cn.tex}
+
+%\subfile{cv/extracurricular.tex}
+%\subfile{cv/honors.tex}
+%\subfile{cv/certificates.tex}
+%\subfile{cv/presentation.tex}
+%\subfile{cv/writing.tex}
+% 对于来自 bibtex 的出版物，添加到 cv/references.bib 并取消下面的注释
+%\subfile{cv/publications.tex}
+
+%-------------------------------------------------------------------------------
+% 章节标题
+%-------------------------------------------------------------------------------
+\cvsection{出版物}
+
+%\printbibliography
+
+%-------------------------------------------------------------------------------
+% 子章节标题
+%-------------------------------------------------------------------------------
+\cvsubsection{\circled{J}ournal Articles}
+
+\begin{refsection}
+%    \nocite{gillies}
+%    \nocite{glashow}
+%    \nocite{herrman}
+%
+    %\ifSubfilesClassLoaded{%
+    %    \printbibliography[
+    %        heading=none,
+    %        sorting=ydnt
+    %    ]
+    %  }{} % we have no 'else' action
+
+ \nocite{xin2009multiscale}
+ \nocite{xin2004bildfolgenauswertung}
+ \nocite{xin2002AntColony}
+
+    \printbibliography[
+    heading=none,
+    sorting=ydnt
+    ]
+\end{refsection}
+
+%-------------------------------------------------------------------------------
+% 子章节标题
+%-------------------------------------------------------------------------------
+\cvsubsection{\circled{C}onference Proceedings}
+
+\begin{refsection}
+
+\nocite{xin2007evaluation}
+\nocite{xin2002KneeSimulator}
+    \printbibliography[
+    heading=none,
+    sorting=ydnt
+    ]
+\end{refsection}
+
+%-------------------------------------------------------------------------------
+% 子章节标题
+%-------------------------------------------------------------------------------
+\cvsubsection{\circled{B}ook}
+
+\begin{refsection}
+
+\nocite{xin2008diss}
+
+    \printbibliography[
+    heading=none,
+    sorting=ydnt
+    ]
+\end{refsection}
+%-------------------------------------------------------------------------------
+% 子章节标题
+%-------------------------------------------------------------------------------
+\cvsubsection{\circled{P}atents}
+
+\begin{refsection}
+\nocite{Xin_VEOS_22}
+\nocite{Xin_GenAI_23}
+\nocite{Xin_LLM_24}
+\nocite{Xin_VLM_24}
+\nocite{Xin_Latent_Diffusion_23}
+\nocite{Xin_Fu_Pan_Simulation_Test_RL_22}
+\nocite{Xin_Chen_NN_TSFeatures_23}
+\nocite{Pan_Xin_DrvStyle_23}
+\nocite{Xin_RearView_17}
+\nocite{Xin_Fu_Pan_Simulation_Test_RL_22}
+\nocite{Xin_Daimler_08}
+
+    \printbibliography[
+    heading=none,
+    sorting=ydnt
+    ]
+\end{refsection}
+
+%
+%\subfile{cv/committees_xin.tex}
+%-------------------------------------------------------------------------------
+%-------------------------------------------------------------------------------
+\end{document}
