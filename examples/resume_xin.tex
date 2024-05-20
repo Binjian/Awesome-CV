@@ -19,15 +19,13 @@
 %-------------------------------------------------------------------------------
 % A4 paper size by default, use 'letterpaper' for US letter
 \documentclass[11pt, a4paper]{awesome-cv}
+\usepackage[style=numeric,defernumbers=true,maxbibnames=99,sorting=ydnt]{biblatex}
 \usepackage{subfiles}
-\usepackage{emo}
-\usepackage{tikz}
+\usepackage{twemojis}
 % Configure page margins with geometry
 \geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
 
 
-\newcommand*\circled[1]{\tikz[baseline=(char.base)]{
-            \node[shape=circle,draw,thick,inner sep=1pt] (char) {#1};}}
 % Color for highlights
 % Awesome Colors: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange
 %                 awesome-nephritis, awesome-concrete, awesome-darknight
@@ -55,7 +53,7 @@
 %	Comment any of the lines below if they are not required
 %-------------------------------------------------------------------------------
 % Available options: circle|rectangle,edge/noedge,left/right
-% \photo[rectangle,edge,right]{./examples/profile}
+\photo[rectangle,edge,right]{avatar1.jpg}
 \name{Binjian}{Xin}
 \position{Deep Learning{\enskip\cdotp\enskip}Autonomous Driving{\enskip\cdotp\enskip}Software Design}
 \address{Rm. 102, Bd. 288, 99 Long Xiangju Road, Qingpu, Shanghai}
@@ -80,8 +78,9 @@
 % \googlescholar{googlescholar-id}{}
 % \extrainfo{extra information}
 
-\quote{``$Decoding \neq Interpretation$, $Abstraction \in Understanding$."}
+\quote{``$Decoding \neq Interpretation$, $Abstraction = Understanding$."}
 
+\bibliography{local.bib,patents_misc.bib}
 %-------------------------------------------------------------------------------
 \begin{document}
 
@@ -111,6 +110,89 @@
 \subfile{resume/education_xin.tex}
 % \input{resume/extracurricular.tex}
 \subfile{resume/skills_xin.tex}
+
+%-------------------------------------------------------------------------------
+% SECTION TITLE
+%-------------------------------------------------------------------------------
+\cvsection{Publications}
+
+%\printbibliography
+
+%-------------------------------------------------------------------------------
+% SUBSECTION TITLE
+%-------------------------------------------------------------------------------
+\cvsubsection{Journal Articles}
+
+\begin{refsegment}
+%    \nocite{gillies}
+%    \nocite{glashow}
+%    \nocite{herrman}
+%
+    %\ifSubfilesClassLoaded{%
+    %    \printbibliography[
+    %        heading=none,
+    %        sorting=ydnt
+    %    ]
+    %  }{} % we have no 'else' action
+
+ \nocite{xin2009multiscale}
+
+    \printbibliography[
+    segment=\therefsegment,
+    heading=none,
+    sorting=ydnt
+    ]
+\end{refsegment}
+
+%-------------------------------------------------------------------------------
+% SUBSECTION TITLE
+%-------------------------------------------------------------------------------
+\cvsubsection{Conference Proceedings}
+
+\begin{refsegment}
+
+\nocite{xin2007evaluation}
+\nocite{xin2002KneeSimulator}
+    \printbibliography[
+    segment=\therefsegment,
+    heading=none,
+    sorting=ydnt
+    ]
+\end{refsegment}
+
+%-------------------------------------------------------------------------------
+% SUBSECTION TITLE
+%-------------------------------------------------------------------------------
+\cvsubsection{Book}
+
+\begin{refsegment}
+
+\nocite{xin2008diss}
+
+    \printbibliography[
+    segment=\therefsegment,
+    heading=none,
+    sorting=ydnt
+    ]
+\end{refsegment}
+%-------------------------------------------------------------------------------
+% SUBSECTION TITLE
+%-------------------------------------------------------------------------------
+\cvsubsection{Patents}
+
+\begin{refsegment}
+\nocite{Xin_VEOS_22}
+\nocite{Xin_GenAI_23}
+\nocite{Xin_VLM_24}
+\nocite{Xin_Latent_Diffusion_23}
+\nocite{Xin_Daimler_08}
+
+    \printbibliography[
+    segment=\therefsegment,
+    heading=none,
+    sorting=ydnt
+    ]
+\end{refsegment}
 
 %-------------------------------------------------------------------------------
 \end{document}
