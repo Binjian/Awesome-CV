@@ -1,7 +1,13 @@
+\documentclass[../resume.tex]{subfiles}
+
+%\bibliography{../local.bib,../patents_misc.bib}
+%\addbibresource{../local.bib}
+%\addbibresource{../patents_misc.bib}
+\begin{document}
 %-------------------------------------------------------------------------------
 %	SECTION TITLE
 %-------------------------------------------------------------------------------
-\cvsection{Work Experience}
+\cvsection{Experience}
 
 
 %-------------------------------------------------------------------------------
@@ -11,115 +17,108 @@
 
 %---------------------------------------------------------
   \cventry
-    {DevOps Engineer} % Job title
-    {Dunamu Inc.} % Organization
-    {Seoul, S.Korea} % Location
-    {Sep. 2023 - Present} % Date(s)
-    {
-    }
-
-%---------------------------------------------------------
-  \cventry
-    {Founding Member \& Site Reliability Engineer \& Infrastructure Team Lead} % Job title
-    {Danggeun Pay Inc. (KarrotPay)} % Organization
-    {Seoul, S.Korea} % Location
-    {Mar. 2021 - Jun. 2023} % Date(s)
+    {Senior Technical Director， Advanced Research} % Job title
+    {Newrizon} % Organization
+    {Shanghai, China} % Location
+    {Nov. 2020 - May 2024} % Date(s)
     {
       \begin{cvitems} % Description(s) of tasks/responsibilities
-        \item {Everything that matters.}
-        \item {Designed and provisioned the entire infrastructure on the AWS cloud to meet security compliance and acquire a business license for financial services in Korea.}
-        \item {Continuously improved the infrastructure architecture since launching the service. (currently 3.6 million users)}
-        \item {Established a standardized base for declarative management of infrastructures and service deployments, enabling operational efficiency and consistency. Over 90\% of AWS resources were all managed through standardized terraform modules. All add-ons and service workloads on the Kubernetes cluster were managed on a GitOps basis with Kustomize and ArgoCD.}
-        \item {Saved over 30\% of the overall AWS costs by establishing a quarterly purchasing strategiy for RI (Reserved Instance) and SP (Savings Plan) and by introducing Graviton instances.}
-        \item {Established a core architecture for regulating of outbound DNS traffic in multi-account and multi-VPC environments utilizing AWS Route53 DNS Firewall and FMS. This significantly increased the level of security confidence in the financial sector's segregated environment.}
-        \item {Introduced Okta employee identity solution in the company, establishing security policies and configuring SSO integration with over 20 enterprise systems including AWS, GitHub, Slack, Google Workspace. Set up a Hub and Spoke architecture, enabling a collaborative account structure with the parent company, Daangn Market.}
+          \item Reinforcemnt learning based BEV controller optimization in multimodal complex environments (~10\% increase in energy efficiency) \supercite{Xin_VEOS_22},
+          \item Time series anomaly detection and battery state of safety prediction based on generative models \supercite{Xin_GenAI_23},
+          \item Research in applications of multimodal foundation model and large language model in autonomous driving \supercite{Xin_VLM_24} \supercite{Xin_Latent_Diffusion_23},
+          \item Software design \& development of streaming data pipeline for time sequence:
+            \begin{itemize}
+                    \item Online deep reinforcement learning data pipeline (ETL, Deep Learning Training/Inference pipelines) $\rightarrow$ \textbf{tspace} \href{https://binjian.github.io/tspace/}{\faGithub},
+                    \item CAN Application package $\rightarrow$ \textbf{candycan} \href{https://binjian.github.io/candycan/}{\faGithub},
+                    \item Time series analysis with generative AI $\rightarrow$ \textbf{funes-ts} \href{https://github.com/binjian/funes-ts/}{\faGithub}.
+                    %\item \href{https://binjian.gitlab.io/tspace/}{tspace}
+            \end{itemize}
       \end{cvitems}
     }
 
 %---------------------------------------------------------
   \cventry
-    {Site Reliability Engineer} % Job title
-    {Danggeun Market Inc.} % Organization
-    {Seoul, S.Korea} % Location
-    {Feb. 2021 - Mar. 2021} % Date(s)
+    {Senior Manager, Autonomous Driving} % Job title
+    {Nio} % Organization
+    {Shanghai, China} % Location
+    {Nov. 2017 - Nov. 2020} % Date(s)
     {
-    }
-
-%---------------------------------------------------------
-  \cventry
-    {Founding Member \& Director of Infrastructure Division} % Job title
-    {Kasa} % Organization
-    {Seoul, S.Korea} % Location
-    {Jun. 2018 - Jan. 2021} % Date(s)
-    {
-      \begin{cvitems} % Description(s) of tasks/responsibilities
-        \item {Designed on-boarding process to guide new engineers, help them to focus on the right tasks, and set expectations to help them be successful at Infrastructure team.}
-        \item {Migrated the orchestration system from DC/OS to Kubernetes which is based on AWS EKS. Managed 3 Kubernetes clusters and 300+ pods. Managed all Kubernetes manifests declaratively with Kustomize and ArgoCD.}
-        \item {Designed and managed complex network configurations on AWS with 4 VPC and 100+ subnets. Separated the development network and operation network according to financial regulations. Established dedicated network connections from AWS VPC to partners' on-premise network based on AWS Direct Connect with secure connection using IPsec VPN. Provisioned OpenVPN servers with LDAP integration.}
-        \item {Provisioned a observability system with Kafka, Elastic Stack(Filebeat, Heartbeat, APM Server, Logstash, Elasticsearch, Kibana). Collected log, uptime, tracing data from hosts, containers, pods and more. The ES cluster which has 9 nodes processed more than 1 billion documents per month. Wrote Terraform module to easily provision ES cluster on AWS EC2 instances.}
-        \item {Provisioned a monitoring system with Kafka, Telegraf, InfluxDB, Grafana. Collected metrics from hosts, containers, pods and more. Wrote Terraform module to easily provision InfluxDB with HA on AWS EC2 instances.}
-        \item {Introduced Kong API Gateway to easily connect all API microservices with a declarative management method based on Terraform and Atlantis to collaborate and audit change history.}
-        \item {Provisioned the Directory Service for employee identity management based on OpenLDAP which guarantees HA with multi-master replication.}
-        \item {Implemented Worker microservices consuming Kafka event topics for email, SMS, Kakaotalk and Slack notification. Developed in-house framework to easily build Kafka consumer microservice with common features including retry on failure, DLQ(Dead Letter Queue), event routing and more.}
-        \item {Introduced Elastic APM to help distributed tracing, trouble-shooting and performance testing in MSA.}
+      \begin{cvitems}
+        \item Advanced hardware and software design of L4 autonomous driving system,
+        \item Team (10+ engineers) build-up and development management,
+        \item Fleet: electric vehicles (10+) with level 4 sensor configuration and computing platform,
+        \item Intelligent charging and automatic parking assistance system (public funded project),
+        \item License application and operation of Intelligent Connected Vehicle (ICV) road test in Shanghai and Beijing,
+        \item Top 3 at testing mileage in Beijing with T3 license,
+        \item 5G ICV Demonstration in Hainan Boao Forum, 2019.
       \end{cvitems}
     }
 
 %---------------------------------------------------------
   \cventry
-    {Software Architect} % Job title
-    {Omnious. Co., Ltd.} % Organization
-    {Seoul, S.Korea} % Location
-    {Jun. 2017 - May. 2018} % Date(s)
+    {Technical Manager, ADAS} % Job title
+    {Patac/SAIC-GM} % Organization
+    {Shanghai, China} % Location
+    {Oct. 2015 - Nov. 2017} % Date(s)
     {
-      \begin{cvitems} % Description(s) of tasks/responsibilities
-        \item {Provisioned an easily managable hybrid infrastructure(Amazon AWS + On-premise) utilizing IaC(Infrastructure as Code) tools like Ansible, Packer and Terraform.}
-        \item {Built fully automated CI/CD pipelines on CircleCI for containerized applications using Docker, AWS ECR and Rancher.}
-        \item {Designed an overall service architecture and pipelines of the Machine Learning based Fashion Tagging API SaaS product with the micro-services architecture.}
-        \item {Implemented several API microservices in Node.js Koa and in the serverless AWS Lambda functions.}
-        \item {Deployed a centralized logging environment(ELK, Filebeat, CloudWatch, S3) which gather log data from docker containers and AWS resources.}
-        \item {Deployed a centralized monitoring environment(Grafana, InfluxDB, CollectD) which gather system metrics as well as docker run-time metrics.}
+      \begin{cvitems}
+        \item System \& software architecture design for active safety domain unit (ADU).
+        \item PATAC ADU A sample: system and software architecture of embedded platform.
+        \item Software architecture of SAIC-MAXUS SV73 highway assist.
+        \item Camera based driver monitoring system.
+        \item Surround view camera system.
+      \end{cvitems}
+    }
+
+
+%---------------------------------------------------------
+  \cventry
+    {Software Manager} % Job title
+    {Visteon Asian Pacific} % Organization
+    {Shanghai, China} % Location
+    {Jan. 2015 - Aug. 2015} % Date(s)
+    {
+      \begin{cvitems}
+        \item SOP project of instrument clusters.
       \end{cvitems}
     }
 
 %---------------------------------------------------------
   \cventry
-    {Co-founder \& Software Engineer} % Job title
-    {PLAT Corp.} % Organization
-    {Seoul, S.Korea} % Location
-    {Jan. 2016 - Jun. 2017} % Date(s)
+    {Senior Software Manager} % Job title
+    {Hella Electronics} % Organization
+    {Shanghai, China} % Location
+    {Jul. 2014 - Jan. 2015} % Date(s)
     {
-      \begin{cvitems} % Description(s) of tasks/responsibilities
-        \item {Implemented RESTful API server for car rental booking application(CARPLAT in Google Play).}
-        \item {Built and deployed overall service infrastructure utilizing Docker container, CircleCI, and several AWS stack(Including EC2, ECS, Route 53, S3, CloudFront, RDS, ElastiCache, IAM), focusing on high-availability, fault tolerance, and auto-scaling.}
-        \item {Developed an easy-to-use Payment module which connects to major PG(Payment Gateway) companies in Korea.}
+      \begin{cvitems}
+        \item SOP project of BCM and PEPS.
       \end{cvitems}
     }
 
 %---------------------------------------------------------
   \cventry
-    {Software Engineer \& Security Researcher (Compulsory Military Service)} % Job title
-    {R.O.K Cyber Command, MND} % Organization
-    {Seoul, S.Korea} % Location
-    {Aug. 2014 - Apr. 2016} % Date(s)
+    {Senior Manager, ADAS} % Job title
+    {Harman R\&D Center} % Organization
+    {Shanghai, China} % Location
+    {Sep. 2009 - Jul. 2014} % Date(s)
     {
-      \begin{cvitems} % Description(s) of tasks/responsibilities
-        \item {Lead engineer on agent-less backtracking system that can discover client device's fingerprint(including public and private IP) independently of the Proxy, VPN and NAT.}
+      \begin{cvitems}
+        \item Development of video based ADAS system.
+        \item SOP projects of camera based parking systems:
+          \begin{itemize}
+            \item SOP of 3D surround view system (SVS) for Geely KC-1,
+            \item SOP of rear view camera deployment (Geely, Ssangyong, Tata, GM, Suzuki, Hyundai and VW),
+            \item Fusion with ultrasonic parking assistance.
+           \end{itemize}
+        \item Supervision of ADAS advanced research:
+          \begin{itemize}
+            \item LDW and FCW on infotainment platform,
+            \item Augmented navigation,
+            \item Moving object detection,
+            \item Design of surround view demo systems (Robot car and OEM vehicles) and demos (CES, Geneva Motor Show).
+          \end{itemize}
       \end{cvitems}
     }
-
-%---------------------------------------------------------
-  \cventry
-    {Software Engineer} % Job title
-    {ShitOne Corp.} % Organization
-    {Seoul, S.Korea} % Location
-    {Dec. 2011 - Feb. 2012} % Date(s)
-    {
-      \begin{cvitems} % Description(s) of tasks/responsibilities
-        \item {Developed a proxy drive smartphone application which connects proxy driver and customer.}
-        \item {Implemented overall Android application logic and wrote API server for community service, along with lead engineer who designed bidding protocol on raw socket and implemented API server for bidding.}
-      \end{cvitems}
-    }
-
 %---------------------------------------------------------
 \end{cventries}
+\end{document}

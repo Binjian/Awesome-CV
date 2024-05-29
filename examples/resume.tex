@@ -19,9 +19,13 @@
 %-------------------------------------------------------------------------------
 % A4 paper size by default, use 'letterpaper' for US letter
 \documentclass[11pt, a4paper]{awesome-cv}
-
+\usepackage[style=numeric,defernumbers=true,maxbibnames=99,sorting=ydnt]{biblatex}
+\usepackage{subfiles}
+\usepackage{twemojis}
+\usepackage{fontawesome5}
 % Configure page margins with geometry
 \geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
+
 
 % Color for highlights
 % Awesome Colors: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange
@@ -50,17 +54,18 @@
 %	Comment any of the lines below if they are not required
 %-------------------------------------------------------------------------------
 % Available options: circle|rectangle,edge/noedge,left/right
-% \photo[rectangle,edge,right]{./examples/profile}
-\name{Byungjin}{Park}
-\position{Site Reliability Engineer{\enskip\cdotp\enskip}Software Architect}
-\address{235, World Cup buk-ro, Mapo-gu, Seoul, 03936, Republic of Korea}
+\photo[rectangle,edge,right]{avatar1.jpg}
+\name{Binjian}{Xin}
+\position{Deep Learning{\enskip\cdotp\enskip}Autonomous Driving{\enskip\cdotp\enskip}Software Design}
+\address{Rm. 102, Bd. 288, 99 Long Xiangju Road, Qingpu, Shanghai}
 
-\mobile{(+82) 10-9030-1843}
-\email{posquit0.bj@gmail.com}
+\mobile{(+86) 139-1896-1550}
+\email{binjian.xin@hotmail.com}
 %\dateofbirth{January 1st, 1970}
-\homepage{www.posquit0.com}
-\github{posquit0}
-\linkedin{posquit0}
+\homepage{binjian.github.io}
+\github{binjian}
+\linkedin{binjian-xin}
+% \twitter{xinbinjian}
 % \gitlab{gitlab-id}
 % \stackoverflow{SO-id}{SO-name}
 % \twitter{@twit}
@@ -74,9 +79,9 @@
 % \googlescholar{googlescholar-id}{}
 % \extrainfo{extra information}
 
-\quote{``Be the change that you want to see in the world."}
+\quote{``$Decoding \neq Interpretation$, $Abstraction = Understanding$."}
 
-
+\bibliography{local.bib,patents_misc.bib}
 %-------------------------------------------------------------------------------
 \begin{document}
 
@@ -88,7 +93,7 @@
 % Leave any of these blank if they are not needed
 \makecvfooter
   {\today}
-  {Byungjin Park~~~·~~~Résumé}
+  {Binjian Xin~~~·~~~Résumé}
   {\thepage}
 
 
@@ -96,16 +101,57 @@
 %	CV/RESUME CONTENT
 %	Each section is imported separately, open each file in turn to modify content
 %-------------------------------------------------------------------------------
-\input{resume/summary.tex}
-\input{resume/experience.tex}
-\input{resume/honors.tex}
-\input{resume/certificates.tex}
+\subfile{resume/summary.tex}
+\subfile{resume/experience.tex}
+% \input{resume/honors.tex}
+% \input{resume/certificates.tex}
 % \input{resume/presentation.tex}
 % \input{resume/writing.tex}
 % \input{resume/committees.tex}
-\input{resume/education.tex}
+\subfile{resume/education.tex}
 % \input{resume/extracurricular.tex}
+\subfile{resume/skills.tex}
 
+%-------------------------------------------------------------------------------
+% SECTION TITLE
+%-------------------------------------------------------------------------------
+\cvsection{Publications}
+
+%\printbibliography
+
+%-------------------------------------------------------------------------------
+% SUBSECTION TITLE
+%-------------------------------------------------------------------------------
+%    \nocite{gillies}
+%    \nocite{glashow}
+%    \nocite{herrman}
+%
+    %\ifSubfilesClassLoaded{%
+    %    \printbibliography[
+    %        heading=none,
+    %        sorting=ydnt
+    %    ]
+    %  }{} % we have no 'else' action
+
+ \nocite{xin2009multiscale}
+
+
+\nocite{xin2007evaluation}
+\nocite{xin2002KneeSimulator}
+
+
+\nocite{xin2008diss}
+
+\nocite{Xin_VEOS_22}
+\nocite{Xin_GenAI_23}
+\nocite{Xin_VLM_24}
+\nocite{Xin_Latent_Diffusion_23}
+\nocite{Xin_Daimler_08}
+
+\printbibliography[
+heading=none,
+sorting=ydnt
+]
 
 %-------------------------------------------------------------------------------
 \end{document}
