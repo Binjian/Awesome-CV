@@ -98,7 +98,8 @@
 %\addbibresource{biblatex-examples.bib}
 %\addbibresource{cv/references.bib}
 %\addbibresource{patents.bib}
-\bibliography{local_cn.bib, patents_misc_cn.bib}
+\addbibresource{local_cn.bib}
+\addbibresource{patents_misc_cn.bib}
 %-------------------------------------------------------------------------------
 \begin{document}
 
@@ -109,9 +110,9 @@
 % 打印包含日期、姓名的页脚
 % 留空如果不需要
 \makecvfooter
-  {\today}
-  {忻斌健~~~·~~~简历}
-  {\thepage}
+{\today}
+{忻斌健~~~·~~~简历}
+{\thepage}
 
 
 %-------------------------------------------------------------------------------
@@ -143,26 +144,26 @@
 \cvsubsection{期刊}
 
 \begin{refsegment}
-%    \nocite{gillies}
-%    \nocite{glashow}
-%    \nocite{herrman}
-%
-    %\ifSubfilesClassLoaded{%
-    %    \printbibliography[
-    %        heading=none,
-    %        sorting=ydnt
-    %    ]
-    %  }{} % we have no 'else' action
+	%    \nocite{gillies}
+	%    \nocite{glashow}
+	%    \nocite{herrman}
+	%
+	%\ifSubfilesClassLoaded{%
+	%    \printbibliography[
+	%        heading=none,
+	%        sorting=ydnt
+	%    ]
+	%  }{} % we have no 'else' action
 
- \nocite{xin2009multiscale}
- \nocite{xin2004bildfolgenauswertung}
- \nocite{xin2002AntColony}
+	\nocite{xin2009multiscale}
+	\nocite{xin2004bildfolgenauswertung}
+	\nocite{xin2002AntColony}
 
-    \printbibliography[
-    segment=\therefsegment,
-    heading=none,
-    sorting=ydnt
-    ]
+	\printbibliography[
+		segment=\therefsegment,
+		heading=none,
+		sorting=ydnt
+	]
 \end{refsegment}
 
 %-------------------------------------------------------------------------------
@@ -172,13 +173,13 @@
 
 \begin{refsegment}
 
-\nocite{xin2007evaluation}
-\nocite{xin2002KneeSimulator}
-    \printbibliography[
-    segment=\therefsegment,
-    heading=none,
-    sorting=ydnt
-    ]
+	\nocite{xin2007evaluation}
+	\nocite{xin2002KneeSimulator}
+	\printbibliography[
+		segment=\therefsegment,
+		heading=none,
+		sorting=ydnt
+	]
 \end{refsegment}
 
 
@@ -189,13 +190,13 @@
 
 \begin{refsegment}
 
-\nocite{xin2008diss}
+	\nocite{xin2008diss}
 
-    \printbibliography[
-    segment=\therefsegment,
-    heading=none,
-    sorting=ydnt
-    ]
+	\printbibliography[
+		segment=\therefsegment,
+		heading=none,
+		sorting=ydnt
+	]
 \end{refsegment}
 %-------------------------------------------------------------------------------
 % 子章节标题
@@ -204,23 +205,23 @@
 
 \begin{refsegment}
 
-\nocite{Xin_VEOS_22}
-\nocite{Xin_GenAI_23}
-\nocite{Xin_LLM_24}
-\nocite{Xin_VLM_24}
-\nocite{Xin_Latent_Diffusion_23}
-\nocite{Xin_Fu_Pan_Simulation_Test_RL_22}
-\nocite{Xin_Chen_NN_TSFeatures_23}
-\nocite{Pan_Xin_DrvStyle_23}
-\nocite{Xin_RearView_17}
-\nocite{Xin_Fu_Pan_Simulation_Test_RL_22}
-\nocite{Xin_Daimler_08}
+	\nocite{Xin_VEOS_22}
+	\nocite{Xin_GenAI_23}
+	\nocite{Xin_LLM_24}
+	\nocite{Xin_VLM_24}
+	\nocite{Xin_Latent_Diffusion_23}
+	\nocite{Xin_Fu_Pan_Simulation_Test_RL_22}
+	\nocite{Xin_Chen_NN_TSFeatures_23}
+	\nocite{Pan_Xin_DrvStyle_23}
+	\nocite{Xin_RearView_17}
+	\nocite{Xin_Fu_Pan_Simulation_Test_RL_22}
+	\nocite{Xin_Daimler_08}
 
-    \printbibliography[
-    segment=\therefsegment,
-    heading=none,
-    sorting=ydnt
-    ]
+	\printbibliography[
+		segment=\therefsegment,
+		heading=none,
+		sorting=ydnt
+	]
 \end{refsegment}
 
 %
