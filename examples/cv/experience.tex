@@ -15,112 +15,137 @@
 %-------------------------------------------------------------------------------
 \begin{cventries}
 
-%---------------------------------------------------------
-  \cventry
-    {Senior Technical Director, Advanced Development} % Job title
-    {Newrizon} % Organization
-    {Shanghai, China} % Location
-    {Nov. 2020 - May 2024} % Date(s)
-    {
-      \begin{cvitems} % Description(s) of tasks/responsibilities
-          \item Reinforcemnt learning based BEV controller optimization in multimodal complex environments (~10\% increase in energy efficiency)
-          \supercite{Xin_VEOS_22} \supercite{Xin_Fu_Pan_Simulation_Test_RL_22} \supercite{Pan_Xin_DrvStyle_23}.
-          \item Time series anomaly detection and battery state of safety prediction based on generative models. \supercite{Xin_GenAI_23} \supercite{Xin_Chen_NN_TSFeatures_23}
-          \item Research in applications of multimodal foundation model and large language model in autonomous driving \supercite{Xin_LLM_24} \supercite{Xin_VLM_24} \supercite{Xin_Latent_Diffusion_23}.
-          \item Software design \& development of streaming data pipeline for time sequence:
-            \begin{itemize}
-                    \item Online deep reinforcement learning data pipeline (ETL, Deep Learning Training/Inference pipelines) $\rightarrow$ \textbf{tspace} \href{https://binjian.github.io/tspace/}{\faGithub},
-                    \item CAN Application package $\rightarrow$ \textbf{candycan} \href{https://binjian.github.io/candycan/}{\faGithub},
-                    \item Time series analysis with generative AI $\rightarrow$ \textbf{funes-ts} \href{https://github.com/binjian/funes-ts/}{\faGithub}.
-                    %\item \href{https://binjian.gitlab.io/tspace/}{tspace}
-            \end{itemize}
-          \item Chip evaluation (Chiplite Chiplet SoC on self-driving applications)
-      \end{cvitems}
-    }
+	%---------------------------------------------------------
+	\cventry
+	{Senior Technical Director, Advanced Development} % Job title
+	{Newrizon} % Organization
+	{Shanghai, China} % Location
+	{Nov. 2020 - May 2024} % Date(s)
+	{
+		\begin{cvitems} % Description(s) of tasks/responsibilities
+			\item Reinforcemnt learning based motion planning (~20\% increase in energy efficiency)
+			\supercite{Xin_VEOS_22} \supercite{Xin_Fu_Pan_Simulation_Test_RL_22} \supercite{Pan_Xin_DrvStyle_23}.
+			\begin{itemize}
+				\item Application of DDPG, TD3, SAC in Online/Offline mode for motion planning
+				\item Sequential model based reinforcement learning (RDPG)  for POMDP
+				\item Distributed training of multi-agent and federated learning
+				\item Diffusion based Q-Learning (IDQL) for offline reinforcement learning
+				\item Design and implementation of deep reinforcement learning data pipeline (ETL, Deep Learning Training/Inference pipelines)
+				      $\rightarrow$ \textbf{tspace} \href{https://binjian.github.io/tspace/}{\faGithub}
+				\item Integration of Tensorflow and Flax/Jax
+				\item CAN Application package (Pydantic integration, CI/CD with Github Action, dynamic loading, property cache)
+				      $\rightarrow$ \textbf{candycan} \href{https://binjian.github.io/candycan/}{\faGithub}
+			\end{itemize}
+			\item Time series anomaly detection and battery state of safety prediction based on generative models. \supercite{Xin_GenAI_23} \supercite{Xin_Chen_NN_TSFeatures_23}
+			\begin{itemize}
+				\item Unsupervised learning of multimodal time series with GANs
+				\item Integration of Pytorch and LSTM, Transformer
+				\item Design and implementation of time series analysis software package with generative models
+				      $\rightarrow$ \textbf{funes-ts} \href{https://github.com/binjian/funes-ts/}{\faGithub}
+				\item Model distillation and data distillation
+			\end{itemize}
+			\item Research in applications of multimodal foundation models and large language models in autonomous driving.
+			\begin{itemize}
+				\item Driving decision of automated driving systems with natural languange interface based on large language models or multimodal foundation models \supercite{Xin_LLM_24}  \supercite{Xin_VLM_24}
+				\item Recovery of occluded image area with latent diffusion models for front-view camera \supercite{Xin_Latent_Diffusion_23}
+				\item 3D reconstruction of driving scenes with NERF and Gaussian Splatting
+			\end{itemize}
+			\item Chip evaluation (Chiplite Chiplet SoC on self-driving applications)
+		\end{cvitems}
+	}
 
-%---------------------------------------------------------
-  \cventry
-    {Senior Manager, Autonomous Driving} % Job title
-    {Nio} % Organization
-    {Shanghai, China} % Location
-    {Nov. 2017 - Nov. 2020} % Date(s)
-    {
-      \begin{cvitems}
-        \item Advanced hardware and software design of L4 autonomous driving system.
-        \item Team (10+ engineers) build-up and development management.
-        \item Fleet: electric vehicles (10+) with level 4 sensor configuration and computing platform.
-        \item Intelligent charging and automatic parking assistance system (public funded project).
-        \item License application and operation of Intelligent Connected Vehicle (ICV) road test in Shanghai and Beijing.
-        \item Top 3 at testing mileage in Beijing with T3 license.
-        \item 5G ICV Demonstration in Hainan Boao Forum, 2019.
-      \end{cvitems}
-    }
+	%---------------------------------------------------------
+	\cventry
+	{Senior Manager, Autonomous Driving} % Job title
+	{Nio} % Organization
+	{Shanghai, China} % Location
+	{Nov. 2017 - Nov. 2020} % Date(s)
+	{
+		\begin{cvitems}
+			\item Advanced hardware and software design of L4 autonomous driving system.
+			\begin{itemize}
+				\item Routing with dynamic programming (Hybrid A* or RRT)
+				\item APA routing with Reeds-Shepp constraints
+				\item Path planning with MPC
+				\item Video and lidar object detection and sensor fusion with deep neural network
+				\item Camera, Lidar calibration
+				\item ADS system development and integration under ROS
+			\end{itemize}
+			\item Team (10+ engineers) build-up and development management.
+			\item Fleet: electric vehicles (10+) with level 4 sensor configuration and computing platform.
+			\item Intelligent charging and automatic parking assistance system (public funded project).
+			\item License application and operation of Intelligent Connected Vehicle (ICV) road test in Shanghai and Beijing.
+			\item Top 3 at testing mileage in Beijing with T3 license.
+			\item 5G ICV Demonstration in Hainan Boao Forum, 2019.
+			\item Chip evaluation (Huawei Ascend on self-driving applications)
+		\end{cvitems}
+	}
 
-%---------------------------------------------------------
-  \cventry
-    {Technical Manager, ADAS} % Job title
-    {Patac/SAIC-GM} % Organization
-    {Shanghai, China} % Location
-    {Oct. 2015 - Nov. 2017} % Date(s)
-    {
-      \begin{cvitems}
-        \item System \& software architecture design for active safety domain unit (ADU).
-        \item PATAC ADU A sample: system and software architecture of embedded platform.
-        \item Software architecture of SAIC-MAXUS SV73 highway assist.
-        \item Camera based driver monitoring system.
-        \item Surround view camera system \supercite{Xin_RearView_17}.
-      \end{cvitems}
-    }
+	%---------------------------------------------------------
+	\cventry
+	{Technical Manager, ADAS} % Job title
+	{Patac/SAIC-GM} % Organization
+	{Shanghai, China} % Location
+	{Oct. 2015 - Nov. 2017} % Date(s)
+	{
+		\begin{cvitems}
+			\item System \& software architecture design for active safety domain unit (ADU).
+			\item PATAC ADU A sample: system and software architecture of embedded platform.
+			\item Software architecture of SAIC-MAXUS SV73 highway assist.
+			\item Camera based driver monitoring system.
+			\item Surround view camera system \supercite{Xin_RearView_17}.
+		\end{cvitems}
+	}
 
 
-%---------------------------------------------------------
-  \cventry
-    {Software Manager} % Job title
-    {Visteon Asia Pacific} % Organization
-    {Shanghai, China} % Location
-    {Jan. 2015 - Aug. 2015} % Date(s)
-    {
-      \begin{cvitems}
-        \item SOP project of instrument clusters.
-      \end{cvitems}
-    }
+	%---------------------------------------------------------
+	\cventry
+	{Software Manager} % Job title
+	{Visteon Asia Pacific} % Organization
+	{Shanghai, China} % Location
+	{Jan. 2015 - Aug. 2015} % Date(s)
+	{
+		\begin{cvitems}
+			\item SOP project of instrument clusters.
+		\end{cvitems}
+	}
 
-%---------------------------------------------------------
-  \cventry
-    {Senior Manager, Software} % Job title
-    {Hella Electronics} % Organization
-    {Shanghai, China} % Location
-    {Jul. 2014 - Jan. 2015} % Date(s)
-    {
-      \begin{cvitems}
-        \item SOP project of BCM and PEPS.
-        \item Platform project of PEPS, BCM, BSW.
-      \end{cvitems}
-    }
+	%---------------------------------------------------------
+	\cventry
+	{Senior Manager, Software} % Job title
+	{Hella Electronics} % Organization
+	{Shanghai, China} % Location
+	{Jul. 2014 - Jan. 2015} % Date(s)
+	{
+		\begin{cvitems}
+			\item SOP project of BCM and PEPS.
+			\item Platform project of PEPS, BCM, BSW.
+		\end{cvitems}
+	}
 
-%---------------------------------------------------------
-  \cventry
-    {Senior Manager, ADAS} % Job title
-    {Harman R\&D Center} % Organization
-    {Shanghai, China} % Location
-    {Sep. 2009 - Jul. 2014} % Date(s)
-    {
-      \begin{cvitems}
-        \item Development of video based ADAS system.
-        \item SOP projects of camera based parking systems:
-          \begin{itemize}
-            \item SOP of 3D surround view system (SVS) for Geely KC-1,
-            \item SOP of rear view camera deployment (Geely, Ssangyong, Tata, GM, Suzuki, Hyundai and VW).
-           \end{itemize}
-        \item Supervision of ADAS advanced research:
-          \begin{itemize}
-            \item LDW and FCW on infotainment platform,
-            \item Augmented navigation,
-            \item Moving object detection.
-            \item Design of surround view demo systems (Robot car and OEM vehicles) and demos (CES, Geneva Motor Show).
-          \end{itemize}
-      \end{cvitems}
-    }
-%---------------------------------------------------------
+	%---------------------------------------------------------
+	\cventry
+	{Senior Manager, ADAS} % Job title
+	{Harman R\&D Center} % Organization
+	{Shanghai, China} % Location
+	{Sep. 2009 - Jul. 2014} % Date(s)
+	{
+		\begin{cvitems}
+			\item Development of video based ADAS system.
+			\item SOP projects of camera based parking systems:
+			\begin{itemize}
+				\item SOP of 3D surround view system (SVS) for Geely KC-1,
+				\item SOP of rear view camera deployment (Geely, Ssangyong, Tata, GM, Suzuki, Hyundai and VW).
+			\end{itemize}
+			\item Supervision of ADAS advanced research:
+			\begin{itemize}
+				\item LDW and FCW on infotainment platform,
+				\item Augmented navigation,
+				\item Moving object detection.
+				\item Design of surround view demo systems (Robot car and OEM vehicles) and demos (CES, Geneva Motor Show).
+			\end{itemize}
+		\end{cvitems}
+	}
+	%---------------------------------------------------------
 \end{cventries}
 \end{document}
