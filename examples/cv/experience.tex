@@ -66,13 +66,26 @@
 	{Nov. 2017 - Nov. 2020} % Date(s)
 	{
 		\begin{cvitems}
-			\item Advanced hardware and software design of L4 autonomous driving system.
-			\begin{itemize}
-				\item Routing with dynamic programming (Hybrid A* or RRT)
-				\item APA routing with Reeds-Shepp constraints
-				\item Path planning with MPC
-				\item Video and lidar object detection and sensor fusion with deep neural network
-				\item Camera, Lidar calibration
+			\item Development of L4 autonomous driving systems.
+			  \begin{itemize}
+			    \item perception and sensor fusion
+				  \begin{itemize}
+					\item Image object detection and semantic segmentation (Darknet)
+					\item Traffic light detection and its state estimation
+					\item Lidar point cloud processing and object detection (pointnet++)
+					\item Monocular depth (based on calibration,vanishing point estimation, monocular depth with Packnet-SFM)
+				  	\item Radar, Video and lidar object sensor fusion and object tracking
+					\item Radar signal processing and data fusion with MHA or JPDA
+					\item Camera, Lidar calibration
+				  \end{itemize}
+			    \item Motion planning and vehicle control
+				  \begin{itemize}
+				  	\item Routing with dynamic programming (Hybrid A*,RRT,MCTS)
+					\item APA routing with Reeds-Shepp constraints
+					\item Path planning with MPC
+					\item behavior planning with vehicle state machine
+					\item Behvior cloning of lateral planning based on recurrent models
+				  \end{itemize}
 				\item ADS system development and integration under ROS
 			\end{itemize}
 			\item Team (10+ engineers) build-up and development management.

@@ -62,13 +62,26 @@
 	{2017年11月 - 2020年11月} % Date(s)
 	{
 		\begin{cvitems}
-			\item L4级自动驾驶系统硬件和软件设计开发
+			\item L4级自动驾驶系统开发
 			\begin{itemize}
-				\item 基于动态规划,混合A*算法/RRT,MCTS的路由算法
-				\item 满足Reeds-Shepp约束的泊车路由规划
-				\item 模型预测控制的轨迹规划
-				\item 深度神经网络的视频和点云目标检测与数据融合
-				\item 摄像头标定以及与激光雷达联合标定
+				\item 感知与数据融合
+				  \begin{itemize}
+					\item 图像运动目标检测和图像语义分割(Darknet)
+					\item 红绿灯信号检测与状态估计
+					\item 激光点云目标检测(PointNet++)
+					\item 单目深度估计(基于相机标定/基于单目深度估计Packnet-SFM/基于消逝点特征深度估计)
+					\item 雷达,视觉,点云信号融合与目标跟踪
+					\item 雷达信号基于MHA/JPDA的数据融合
+					\item 摄像头标定以及与激光雷达联合标定
+				  \end{itemize}
+				\item 运动规划和控制
+				  \begin{itemize}
+				  	\item 基于动态规划,混合A*算法/RRT,MCTS的路由算法
+					\item 满足Reeds-Shepp约束的泊车路由规划
+					\item 模型预测控制的轨迹规划
+					\item 车辆行为规划与状态机管理
+					\item 基于LSTM的车辆横向控制端到端模仿学习
+				  \end{itemize}
 				\item 基于ROS自动驾驶系统集成与开发
 				\item 团队组建和发展(10+工程师),车队管理
 			\end{itemize}
