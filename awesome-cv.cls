@@ -691,7 +691,7 @@
   \end{tabular*}%
   \ifstrempty{#5}
     {}
-    {\descriptionstyle{#5}}%
+    {\par\nobreak\vspace{1.5mm}\descriptionstyle{#5}}%
 }
 
 % Define an environment for cvsubentry
